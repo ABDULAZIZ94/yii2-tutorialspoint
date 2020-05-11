@@ -39,7 +39,7 @@
          'db' => require(__DIR__ . '/db.php'), 
       ], 
       //changing the default controller 
-      'defaultRoute' => 'example', 
+      'defaultRoute' => 'site', 
       'params' => $params, 
    ]; 
    if (YII_ENV_DEV) { 
