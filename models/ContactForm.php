@@ -35,12 +35,15 @@ class ContactForm extends Model
     /**
      * @return array customized attribute labels
      */
-    public function attributeLabels()
-    {
+    public function attributeLabels() {
         return [
-            'verifyCode' => 'Verification Code',
+           'name' => 'name overridden',
+           'email' => 'email overridden',
+           'subject' => 'subject overridden',
+           'body' => 'body overridden',
+           'verifyCode' => 'verifyCode overridden',
         ];
-    }
+     }
 
     /**
      * Sends an email to the specified email address using the information collected by this model.

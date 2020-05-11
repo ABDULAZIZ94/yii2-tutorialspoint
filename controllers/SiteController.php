@@ -120,6 +120,15 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionShowContactModel() { 
+        $mContactForm = new \app\models\ContactForm(); 
+        $mContactForm->name = "contactForm"; 
+        $mContactForm->email = "user@gmail.com"; 
+        $mContactForm->subject = "subject"; 
+        $mContactForm->body = "body"; 
+        var_dump($mContactForm); 
+     }
+
     /**
      * Displays about page.
      *
