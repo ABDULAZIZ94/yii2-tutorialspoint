@@ -137,4 +137,8 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionTestWidget() { 
+        return $this->render('testwidget'); 
+     }
 }
