@@ -119,13 +119,13 @@ class SiteController extends Controller
            'model' => $model,
         ]);
      }
-    public function actionShowContactModel() { 
-        $mContactForm = new \app\models\ContactForm(); 
-        $mContactForm->name = "contactForm"; 
-        $mContactForm->email = "user@gmail.com"; 
-        $mContactForm->subject = "subject"; 
-        $mContactForm->body = "body"; 
-        var_dump($mContactForm); 
+     public function actionShowContactModel() {
+        $mContactForm = new \app\models\ContactForm();
+        $mContactForm->name = "contactForm";
+        $mContactForm->email = "user@gmail.com";
+        $mContactForm->subject = "subject";
+        $mContactForm->body = "body";
+        return \yii\helpers\Json::encode($mContactForm);
      }
 
     /**
