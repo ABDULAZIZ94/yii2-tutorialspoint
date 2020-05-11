@@ -133,10 +133,14 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
+    public function actionAbout() {
+        $email = "admin@support.com";
+        $phone = "+78007898100";
+        return $this->render('about',[
+           'email' => $email,
+           'phone' => $phone
+        ]);
+     }
 
     public function actionTestWidget() { 
         return $this->render('testwidget'); 
