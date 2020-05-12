@@ -140,5 +140,9 @@ class SiteController extends Controller
 
     public function actionTestWidget() { 
         return $this->render('testwidget'); 
-     }
+    }
+    
+    public function actionTestResponse() {
+        Yii::$app->response->headers->add('Pragma', 'no-cache');
+    }
 }
