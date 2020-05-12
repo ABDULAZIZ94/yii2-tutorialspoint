@@ -6,12 +6,14 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use yii\web\View;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    public $layout = "newlayout";
     /**
      * {@inheritdoc}
      */
@@ -107,26 +109,25 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionContact()
-    {
+    public function actionContact() {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
+        $model->scenario = ContactForm::SCENARIO_EMAIL_FROM_USER;
+        if ($model->load(Yii::$app->request->post()) && $model->
+           contact(Yii::$app->params ['adminEmail'])) {
+              Yii::$app->session->setFlash('contactFormSubmitted');  
+              return $this->refresh();
         }
         return $this->render('contact', [
-            'model' => $model,
+           'model' => $model,
         ]);
-    }
-
-    public function actionShowContactModel() { 
-        $mContactForm = new \app\models\ContactForm(); 
-        $mContactForm->name = "contactForm"; 
-        $mContactForm->email = "user@gmail.com"; 
-        $mContactForm->subject = "subject"; 
-        $mContactForm->body = "body"; 
-        var_dump($mContactForm); 
+     }
+     public function actionShowContactModel() {
+        $mContactForm = new \app\models\ContactForm();
+        $mContactForm->name = "contactForm";
+        $mContactForm->email = "user@gmail.com";
+        $mContactForm->subject = "subject";
+        $mContactForm->body = "body";
+        return \yii\helpers\Json::encode($mContactForm);
      }
 
     /**
@@ -134,8 +135,14 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
-    {
+    public function actionAbout() {
+        \Yii::$app->view->on(View::EVENT_BEGIN_BODY, function () {
+           echo date('m.d.Y H:i:s');
+        });
         return $this->render('about');
-    }
+     }
+
+    public function actionTestWidget() { 
+        return $this->render('testwidget'); 
+     }
 }
