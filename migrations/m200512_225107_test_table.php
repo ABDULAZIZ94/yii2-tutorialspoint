@@ -34,12 +34,9 @@ class m200512_225107_test_table extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeDown()
-    {
-        echo "m200512_225107_test_table cannot be reverted.\n";
-
-        return false;
-    }
+    public function safeDown() {
+        $this->dropTable('user');
+     }
 
     /*
     // Use up()/down() to run migration code without a transaction.
