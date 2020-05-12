@@ -9,7 +9,8 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-\app\assets\DemoAsset::register($this);
+use app\assets\DemoAsset;
+DemoAsset::register($this);
 
 AppAsset::register($this);
 ?>
