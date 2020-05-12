@@ -156,9 +156,13 @@ class SiteController extends Controller
         return $this->render('routes');
     }
 
-    public function actionRegistration() {
-        $model = new RegistrationForm();
-        return $this->render('registration', ['model' => $model]);
+    public function actionRegistration() { 
+        $model = new RegistrationForm(); 
+        if (Yii::$app->request->isAjax && $model->load(Yii::$app->request>post())) { 
+           Yii::$app->response->format = Response::FORMAT_JSON; 
+           return ActiveForm::validate($model); 
+        } 
+        return $this->render('registration', ['model' => $model]); 
     }
 
     public function actionAdHocValidation() {
