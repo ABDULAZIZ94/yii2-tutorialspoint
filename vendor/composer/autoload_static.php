@@ -73,7 +73,7 @@ class ComposerStaticInita995f611d24c26bf0f438c3373b224e4
         ),
         'yii\\faker\\' => 
         array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker',
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker/src',
         ),
         'yii\\debug\\' => 
         array (
@@ -144,6 +144,10 @@ class ComposerStaticInita995f611d24c26bf0f438c3373b224e4
     public static $prefixesPsr0 = array (
         'H' => 
         array (
+            'HelloWorld' => 
+            array (
+                0 => __DIR__ . '/..' . '/tutorialspoint/hello-world/src',
+            ),
             'HTMLPurifier' => 
             array (
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',

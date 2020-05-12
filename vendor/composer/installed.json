@@ -112,17 +112,17 @@
     },
     {
         "name": "cebe/markdown",
-        "version": "1.2.1",
-        "version_normalized": "1.2.1.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/cebe/markdown.git",
-            "reference": "9bac5e971dd391e2802dca5400bbeacbaea9eb86"
+            "reference": "2b2461bed9e15305486319ee552bafca75d1cdaa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cebe/markdown/zipball/9bac5e971dd391e2802dca5400bbeacbaea9eb86",
-            "reference": "9bac5e971dd391e2802dca5400bbeacbaea9eb86",
+            "url": "https://api.github.com/repos/cebe/markdown/zipball/2b2461bed9e15305486319ee552bafca75d1cdaa",
+            "reference": "2b2461bed9e15305486319ee552bafca75d1cdaa",
             "shasum": ""
         },
         "require": {
@@ -134,7 +134,7 @@
             "facebook/xhprof": "*@dev",
             "phpunit/phpunit": "4.1.*"
         },
-        "time": "2018-03-26T11:24:36+00:00",
+        "time": "2020-02-26T01:55:18+00:00",
         "bin": [
             "bin/markdown"
         ],
@@ -144,7 +144,7 @@
                 "dev-master": "1.2.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "cebe\\markdown\\": ""
@@ -174,35 +174,35 @@
     },
     {
         "name": "doctrine/lexer",
-        "version": "1.2.0",
-        "version_normalized": "1.2.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/lexer.git",
-            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6"
+            "reference": "ec953a1b157db060fc9576a6f6b6b1865a09aac9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/lexer/zipball/5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
-            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+            "url": "https://api.github.com/repos/doctrine/lexer/zipball/ec953a1b157db060fc9576a6f6b6b1865a09aac9",
+            "reference": "ec953a1b157db060fc9576a6f6b6b1865a09aac9",
             "shasum": ""
         },
         "require": {
             "php": "^7.2"
         },
         "require-dev": {
-            "doctrine/coding-standard": "^6.0",
+            "doctrine/coding-standard": "^7.0.2",
             "phpstan/phpstan": "^0.11.8",
             "phpunit/phpunit": "^8.2"
         },
-        "time": "2019-10-30T14:39:59+00:00",
+        "time": "2020-02-06T21:05:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.2.x-dev"
+                "dev-master": "1.3.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
@@ -238,17 +238,17 @@
     },
     {
         "name": "egulias/email-validator",
-        "version": "2.1.17",
-        "version_normalized": "2.1.17.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/egulias/EmailValidator.git",
-            "reference": "ade6887fd9bd74177769645ab5c474824f8a418a"
+            "reference": "2f38a470f9f179d8d8835256de58c300916e47ae"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ade6887fd9bd74177769645ab5c474824f8a418a",
-            "reference": "ade6887fd9bd74177769645ab5c474824f8a418a",
+            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/2f38a470f9f179d8d8835256de58c300916e47ae",
+            "reference": "2f38a470f9f179d8d8835256de58c300916e47ae",
             "shasum": ""
         },
         "require": {
@@ -264,14 +264,14 @@
         "suggest": {
             "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
         },
-        "time": "2020-02-13T22:36:52+00:00",
+        "time": "2020-03-02T21:43:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.1.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Egulias\\EmailValidator\\": "EmailValidator"
@@ -347,17 +347,17 @@
     },
     {
         "name": "fzaninotto/faker",
-        "version": "v1.9.1",
-        "version_normalized": "1.9.1.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/fzaninotto/Faker.git",
-            "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+            "reference": "5337ce5261b393937bd7aaebb21020159756a152"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
-            "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5337ce5261b393937bd7aaebb21020159756a152",
+            "reference": "5337ce5261b393937bd7aaebb21020159756a152",
             "shasum": ""
         },
         "require": {
@@ -368,14 +368,14 @@
             "phpunit/phpunit": "^4.8.35 || ^5.7",
             "squizlabs/php_codesniffer": "^2.9.2"
         },
-        "time": "2019-12-12T13:22:17+00:00",
+        "time": "2020-05-11T08:39:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.9-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Faker\\": "src/Faker/"
@@ -399,31 +399,31 @@
     },
     {
         "name": "kartik-v/yii2-krajee-base",
-        "version": "v2.0.5",
-        "version_normalized": "2.0.5.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-            "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd"
+            "reference": "8aa48bb2e7613db45b3c34f7a9346d7f43b1f4ec"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/9ddb662bdf49fdb671a90853912a40418a26a0dd",
-            "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd",
+            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/8aa48bb2e7613db45b3c34f7a9346d7f43b1f4ec",
+            "reference": "8aa48bb2e7613db45b3c34f7a9346d7f43b1f4ec",
             "shasum": ""
         },
         "suggest": {
             "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
             "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
         },
-        "time": "2019-03-13T17:14:54+00:00",
+        "time": "2019-05-25T07:25:02+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "kartik\\base\\": "src"
@@ -453,30 +453,30 @@
     },
     {
         "name": "kartik-v/yii2-widget-datetimepicker",
-        "version": "v1.4.9",
-        "version_normalized": "1.4.9.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-datetimepicker.git",
-            "reference": "dadf042cf13cce84a877dff5f1e6893538f370cf"
+            "reference": "c201f98d3b8e41dcce2c70678ae31008246fc430"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/dadf042cf13cce84a877dff5f1e6893538f370cf",
-            "reference": "dadf042cf13cce84a877dff5f1e6893538f370cf",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/c201f98d3b8e41dcce2c70678ae31008246fc430",
+            "reference": "c201f98d3b8e41dcce2c70678ae31008246fc430",
             "shasum": ""
         },
         "require": {
             "kartik-v/yii2-krajee-base": ">=2.0.0"
         },
-        "time": "2019-05-29T12:28:51+00:00",
+        "time": "2019-12-16T09:37:15+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.4.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "kartik\\datetime\\": "src"
@@ -509,17 +509,17 @@
     },
     {
         "name": "opis/closure",
-        "version": "3.5.1",
-        "version_normalized": "3.5.1.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/opis/closure.git",
-            "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969"
+            "reference": "c37b40d59d9afffc2e5e958e2e5ccdb08634f81d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/opis/closure/zipball/93ebc5712cdad8d5f489b500c59d122df2e53969",
-            "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969",
+            "url": "https://api.github.com/repos/opis/closure/zipball/c37b40d59d9afffc2e5e958e2e5ccdb08634f81d",
+            "reference": "c37b40d59d9afffc2e5e958e2e5ccdb08634f81d",
             "shasum": ""
         },
         "require": {
@@ -529,14 +529,14 @@
             "jeremeamia/superclosure": "^2.0",
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2019-11-29T22:36:02+00:00",
+        "time": "2019-12-21T12:58:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "3.5.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Opis\\Closure\\": "src/"
@@ -612,42 +612,41 @@
     },
     {
         "name": "swiftmailer/swiftmailer",
-        "version": "v6.2.3",
-        "version_normalized": "6.2.3.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/swiftmailer/swiftmailer.git",
-            "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
+            "reference": "4633950338d22b4406e5c77f6e25c658435d5db4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
-            "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
+            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/4633950338d22b4406e5c77f6e25c658435d5db4",
+            "reference": "4633950338d22b4406e5c77f6e25c658435d5db4",
             "shasum": ""
         },
         "require": {
-            "egulias/email-validator": "~2.0",
-            "php": ">=7.0.0",
+            "egulias/email-validator": "^2.0",
+            "php": "^7.2.5",
             "symfony/polyfill-iconv": "^1.0",
             "symfony/polyfill-intl-idn": "^1.10",
             "symfony/polyfill-mbstring": "^1.0"
         },
         "require-dev": {
-            "mockery/mockery": "~0.9.1",
-            "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+            "mockery/mockery": "^1.0",
+            "symfony/phpunit-bridge": "^4.4|^5.0"
         },
         "suggest": {
-            "ext-intl": "Needed to support internationalized email addresses",
-            "true/punycode": "Needed to support internationalized email addresses, if ext-intl is not installed"
+            "ext-intl": "Needed to support internationalized email addresses"
         },
-        "time": "2019-11-12T09:31:26+00:00",
+        "time": "2020-03-03T08:49:48+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "6.2-dev"
+                "dev-master": "6.3-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "files": [
                 "lib/swift_required.php"
@@ -676,8 +675,8 @@
     },
     {
         "name": "symfony/polyfill-iconv",
-        "version": "v1.16.0",
-        "version_normalized": "1.16.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-iconv.git",
@@ -702,7 +701,7 @@
                 "dev-master": "1.16-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Iconv\\": ""
@@ -737,8 +736,8 @@
     },
     {
         "name": "symfony/polyfill-intl-idn",
-        "version": "v1.16.0",
-        "version_normalized": "1.16.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -765,7 +764,7 @@
                 "dev-master": "1.16-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Intl\\Idn\\": ""
@@ -801,8 +800,8 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.16.0",
-        "version_normalized": "1.16.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -827,7 +826,7 @@
                 "dev-master": "1.16-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Mbstring\\": ""
@@ -862,30 +861,30 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.16.0",
-        "version_normalized": "1.16.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
-            "reference": "42fda6d7380e5c940d7f68341ccae89d5ab9963b"
+            "reference": "3b9a8a69da47203c31292629533d528191e81997"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/42fda6d7380e5c940d7f68341ccae89d5ab9963b",
-            "reference": "42fda6d7380e5c940d7f68341ccae89d5ab9963b",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/3b9a8a69da47203c31292629533d528191e81997",
+            "reference": "3b9a8a69da47203c31292629533d528191e81997",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2020-05-08T17:28:34+00:00",
+        "time": "2020-05-11T15:36:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.16-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Php72\\": ""
@@ -918,23 +917,53 @@
         ]
     },
     {
-        "name": "yiisoft/yii2",
-        "version": "2.0.35",
-        "version_normalized": "2.0.35.0",
+        "name": "tutorialspoint/hello-world",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "d42809e4969cdc0adb97197ba32774b3e4cd9e8e"
+            "url": "https://github.com/ryzhak/tutorialspoint-hello-world.git",
+            "reference": "00f9ec98f666598a81c0f009044cec6e2181baa5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d42809e4969cdc0adb97197ba32774b3e4cd9e8e",
-            "reference": "d42809e4969cdc0adb97197ba32774b3e4cd9e8e",
+            "url": "https://api.github.com/repos/ryzhak/tutorialspoint-hello-world/zipball/00f9ec98f666598a81c0f009044cec6e2181baa5",
+            "reference": "00f9ec98f666598a81c0f009044cec6e2181baa5",
+            "shasum": ""
+        },
+        "time": "2015-12-24T18:19:50+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "HelloWorld": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "tutorialspoint"
+            }
+        ]
+    },
+    {
+        "name": "yiisoft/yii2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "a62f4404f0327f5a6f3f81e83bf9ff337c94c9a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a62f4404f0327f5a6f3f81e83bf9ff337c94c9a3",
+            "reference": "a62f4404f0327f5a6f3f81e83bf9ff337c94c9a3",
             "shasum": ""
         },
         "require": {
             "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-            "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+            "bower-asset/jquery": "3.5.*@stable | 3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
             "bower-asset/punycode": "1.3.*",
             "bower-asset/yii2-pjax": "~2.0.1",
             "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -945,7 +974,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2020-05-02T11:11:31+00:00",
+        "time": "2020-05-11T09:18:15+00:00",
         "bin": [
             "yii"
         ],
@@ -955,7 +984,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\": ""
@@ -1021,17 +1050,17 @@
     },
     {
         "name": "yiisoft/yii2-bootstrap",
-        "version": "2.0.10",
-        "version_normalized": "2.0.10.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-            "reference": "073c9ab0a4eb71f2485d84c96a1967130300d8fc"
+            "reference": "db98a09ddfbfd564b5cabbf5004a180b7a383588"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/073c9ab0a4eb71f2485d84c96a1967130300d8fc",
-            "reference": "073c9ab0a4eb71f2485d84c96a1967130300d8fc",
+            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/db98a09ddfbfd564b5cabbf5004a180b7a383588",
+            "reference": "db98a09ddfbfd564b5cabbf5004a180b7a383588",
             "shasum": ""
         },
         "require": {
@@ -1041,14 +1070,14 @@
         "require-dev": {
             "phpunit/phpunit": "<7"
         },
-        "time": "2019-04-23T13:18:43+00:00",
+        "time": "2019-12-06T16:11:37+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\bootstrap\\": "src"
@@ -1060,8 +1089,9 @@
         ],
         "authors": [
             {
-                "name": "Paul Klimov",
-                "email": "klimov.paul@gmail.com"
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/"
             },
             {
                 "name": "Alexander Makarov",
@@ -1073,9 +1103,8 @@
                 "email": "amigo.cobos@gmail.com"
             },
             {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/"
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
             }
         ],
         "description": "The Twitter Bootstrap extension for the Yii framework",
@@ -1086,30 +1115,30 @@
     },
     {
         "name": "yiisoft/yii2-codeception",
-        "version": "2.0.6",
-        "version_normalized": "2.0.6.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-codeception.git",
-            "reference": "086c8c2d28736e7a484a7a8611b5cc84024e9fb3"
+            "reference": "c7d1509498c349179940a8d2b9c6d078e8054b90"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/086c8c2d28736e7a484a7a8611b5cc84024e9fb3",
-            "reference": "086c8c2d28736e7a484a7a8611b5cc84024e9fb3",
+            "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/c7d1509498c349179940a8d2b9c6d078e8054b90",
+            "reference": "c7d1509498c349179940a8d2b9c6d078e8054b90",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": ">=2.0.4"
         },
-        "time": "2017-05-22T12:08:21+00:00",
+        "time": "2018-04-26T18:21:40+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\codeception\\": ""
@@ -1134,17 +1163,17 @@
     },
     {
         "name": "yiisoft/yii2-composer",
-        "version": "2.0.9",
-        "version_normalized": "2.0.9.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-composer.git",
-            "reference": "d191176c4f8372e397a9e3df27360dca6a70efaa"
+            "reference": "a42a0d69e1a0799f7db0d0e907db2bbeb437230c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/d191176c4f8372e397a9e3df27360dca6a70efaa",
-            "reference": "d191176c4f8372e397a9e3df27360dca6a70efaa",
+            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/a42a0d69e1a0799f7db0d0e907db2bbeb437230c",
+            "reference": "a42a0d69e1a0799f7db0d0e907db2bbeb437230c",
             "shasum": ""
         },
         "require": {
@@ -1154,7 +1183,7 @@
             "composer/composer": "^1.0 | ^2.0@dev",
             "phpunit/phpunit": "<7"
         },
-        "time": "2020-04-20T18:47:46+00:00",
+        "time": "2020-04-20T18:48:05+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "yii\\composer\\Plugin",
@@ -1162,7 +1191,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\composer\\": ""
@@ -1191,17 +1220,17 @@
     },
     {
         "name": "yiisoft/yii2-debug",
-        "version": "2.1.13",
-        "version_normalized": "2.1.13.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "696712a2a3565b1a072ad3c9d298e262967e8282"
+            "reference": "2e7b2913b710e1cfd3d68e12e85179cdcb7ffaf1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/696712a2a3565b1a072ad3c9d298e262967e8282",
-            "reference": "696712a2a3565b1a072ad3c9d298e262967e8282",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/2e7b2913b710e1cfd3d68e12e85179cdcb7ffaf1",
+            "reference": "2e7b2913b710e1cfd3d68e12e85179cdcb7ffaf1",
             "shasum": ""
         },
         "require": {
@@ -1215,14 +1244,14 @@
             "yiisoft/yii2-coding-standards": "~2.0",
             "yiisoft/yii2-swiftmailer": "*"
         },
-        "time": "2020-01-17T13:40:32+00:00",
+        "time": "2020-03-22T09:14:06+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\debug\\": "src"
@@ -1251,34 +1280,37 @@
     },
     {
         "name": "yiisoft/yii2-faker",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-faker.git",
-            "reference": "3df62b1dcb272a8413f9c6e532c9d73f325ccde1"
+            "reference": "1f9a6bc08ef48bafc8ae440ac4c00fbe67af317d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/3df62b1dcb272a8413f9c6e532c9d73f325ccde1",
-            "reference": "3df62b1dcb272a8413f9c6e532c9d73f325ccde1",
+            "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/1f9a6bc08ef48bafc8ae440ac4c00fbe67af317d",
+            "reference": "1f9a6bc08ef48bafc8ae440ac4c00fbe67af317d",
             "shasum": ""
         },
         "require": {
             "fzaninotto/faker": "~1.4",
             "yiisoft/yii2": "~2.0.0"
         },
-        "time": "2018-02-19T20:27:10+00:00",
+        "require-dev": {
+            "phpunit/phpunit": "<7"
+        },
+        "time": "2020-01-24T23:10:57+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
-                "yii\\faker\\": ""
+                "yii\\faker\\": "src"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1300,17 +1332,17 @@
     },
     {
         "name": "yiisoft/yii2-gii",
-        "version": "2.2.1",
-        "version_normalized": "2.2.1.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-gii.git",
-            "reference": "f3bb400b578b0a0ee737d267ebaffdaad7b32dee"
+            "reference": "9485ff1f411fc0e62752001235fa5a9875de7a47"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/f3bb400b578b0a0ee737d267ebaffdaad7b32dee",
-            "reference": "f3bb400b578b0a0ee737d267ebaffdaad7b32dee",
+            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/9485ff1f411fc0e62752001235fa5a9875de7a47",
+            "reference": "9485ff1f411fc0e62752001235fa5a9875de7a47",
             "shasum": ""
         },
         "require": {
@@ -1321,14 +1353,14 @@
             "phpunit/phpunit": "<7",
             "yiisoft/yii2-coding-standards": "~2.0"
         },
-        "time": "2020-05-02T11:59:43+00:00",
+        "time": "2020-05-02T11:59:58+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\gii\\": "src"
@@ -1353,31 +1385,34 @@
     },
     {
         "name": "yiisoft/yii2-swiftmailer",
-        "version": "2.1.2",
-        "version_normalized": "2.1.2.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-            "reference": "09659a55959f9e64b8178d842b64a9ffae42b994"
+            "reference": "8958f992d3b155d6162d7bf2bdcd8711ff8204f9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/09659a55959f9e64b8178d842b64a9ffae42b994",
-            "reference": "09659a55959f9e64b8178d842b64a9ffae42b994",
+            "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/8958f992d3b155d6162d7bf2bdcd8711ff8204f9",
+            "reference": "8958f992d3b155d6162d7bf2bdcd8711ff8204f9",
             "shasum": ""
         },
         "require": {
             "swiftmailer/swiftmailer": "~6.0",
             "yiisoft/yii2": ">=2.0.4"
         },
-        "time": "2018-09-23T22:00:47+00:00",
+        "require-dev": {
+            "phpunit/phpunit": "<7"
+        },
+        "time": "2019-12-06T16:14:23+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.1.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "yii\\swiftmailer\\": "src"

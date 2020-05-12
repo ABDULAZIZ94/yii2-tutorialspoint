@@ -21,8 +21,11 @@
         "yiisoft/yii2": "~2.0.0",
         "fzaninotto/faker": "~1.4"
     },
+    "require-dev": {
+        "phpunit/phpunit": "<7"
+    },
     "autoload": {
-        "psr-4": { "yii\\faker\\": "" }
+        "psr-4": {"yii\\faker\\": "src"}
     },
     "extra": {
         "branch-alias": {
