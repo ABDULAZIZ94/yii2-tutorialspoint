@@ -7,6 +7,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
+use yii\base\DynamicModel;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\RegistrationForm;
@@ -158,5 +159,21 @@ class SiteController extends Controller
     public function actionRegistration() {
         $model = new RegistrationForm();
         return $this->render('registration', ['model' => $model]);
+    }
+
+    public function actionAdHocValidation() {
+        $model = DynamicModel::validateData([
+           'username' => 'John',
+           'email' => 'john@gmail.com'
+        ], [
+           [['username', 'email'], 'string', 'max' => 12],
+           ['email', 'email'],
+        ]);
+         
+        if ($model->hasErrors()) {
+           var_dump($model->errors);
+        } else {
+           echo "success";
+        }
     }
 }
