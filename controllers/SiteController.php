@@ -144,5 +144,9 @@ class SiteController extends Controller
     
     public function actionTestResponse() {
         return \Yii::$app->response->sendFile('favicon.ico');
-     }
+    }
+    
+     public function actionMaintenance() {
+        echo "<h1>Maintenance</h1>";
+    }
 }
