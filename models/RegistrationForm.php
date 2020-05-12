@@ -15,7 +15,7 @@
             [['password', 'email', 'country', 'city', 'phone'], 'required'],
             ['username', 'required', 'message' => 'Username is required'],
             ['country', 'trim'],
-            ['city', 'default'],
+            ['city', 'default', 'value' => 'Paris'],
             // the email attribute should be a valid email address
             ['email', 'email'],
          ];
