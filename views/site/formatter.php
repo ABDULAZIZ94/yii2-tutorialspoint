@@ -1,9 +1,7 @@
 <?php
    $formatter = \Yii::$app->formatter;
+   echo $formatter->asDate(date('Y-m-d'), 'short'),"<br>";
+   echo $formatter->asDate(date('Y-m-d'), 'medium'),"<br>";
    echo $formatter->asDate(date('Y-m-d'), 'long'),"<br>";
-   echo $formatter->asTime(date("Y-m-d")),"<br>";
-   echo $formatter->asDatetime(date("Y-m-d")),"<br>";
-
-   echo $formatter->asTimestamp(date("Y-m-d")),"<br>";
-   echo $formatter->asRelativeTime(date("Y-m-d")),"<br>";
+   echo $formatter->asDate(date('Y-m-d'), 'full'),"<br>";
 ?>
