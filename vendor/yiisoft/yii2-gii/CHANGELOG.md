@@ -1,6 +1,18 @@
 Yii Framework 2 gii extension Change Log
 ========================================
 
+2.2.1 May 02, 2020
+------------------
+
+- Bug #428: Permit the usage of anonymous generators using dependency injection (aguevaraIL)
+
+
+2.2.0 March 24, 2020
+--------------------
+
+- Enh #424: Added support for `via()` junction relations in model generator (rhertogh)
+
+
 2.1.4 January 17, 2020
 ----------------------
 
