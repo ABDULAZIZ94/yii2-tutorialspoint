@@ -180,5 +180,41 @@ class SiteController extends Controller
            echo "success";
         }
     }
+
+    public function actionOpenAndCloseSession() {
+        $session = Yii::$app->session;
+        // open a session
+        $session->open();
+        // check if a session is already opened
+        if ($session->isActive) echo "session is active";
+        // close a session
+        $session->close();
+        // destroys all data registered to a session
+        $session->destroy();
+     }
+
+     public function actionAccessSession() {
+
+        $session = Yii::$app->session;
+         
+        // set a session variable
+        $session->set('language', 'ru-RU');
+         
+        // get a session variable
+        $language = $session->get('language');
+        var_dump($language);
+               
+        // remove a session variable
+        $session->remove('language');
+               
+        // check if a session variable exists
+        if (!$session->has('language')) echo "language is not set";
+               
+        $session['captcha'] = [
+           'value' => 'aSBS23',
+           'lifetime' => 7200,
+        ];
+        var_dump($session['captcha']);
+     }
     
 }
