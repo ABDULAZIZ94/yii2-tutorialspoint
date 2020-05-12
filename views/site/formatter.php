@@ -1,10 +1,10 @@
 <?php
-   $formatter = \Yii::$app->formatter;
-   echo Yii::$app->formatter->asInteger(105),"<br>";
-   echo Yii::$app->formatter->asDecimal(105.41),"<br>";
-   echo Yii::$app->formatter->asPercent(0.51),"<br>";
-   echo Yii::$app->formatter->asScientific(105),"<br>";
-   echo Yii::$app->formatter->asCurrency(105),"<br>";
-   echo Yii::$app->formatter->asSize(105),"<br>";
-   echo Yii::$app->formatter->asShortSize(105),"<br>";
+   Yii::$app->formatter->locale = 'ru-RU';
+   echo Yii::$app->formatter->asDate('2016-01-01'); // output: 1 января 2016 г.
+   Yii::$app->formatter->locale = 'de-DE';
+   // output: 1. Januar 2016
+   echo Yii::$app->formatter->asDate('2016-01-01');
+   Yii::$app->formatter->locale = 'en-US';
+   // output: January 1, 2016
+   echo Yii::$app->formatter->asDate('2016-01-01');
 ?>
