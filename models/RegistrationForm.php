@@ -6,18 +6,16 @@
       public $username;
       public $password;
       public $email;
-      public $subscriptions;
-      public $photos;
-      /**
-      * @return array customized attribute labels
-      */
-      public function attributeLabels() {
+      public $country;
+      public $city;
+      public $phone;
+      public function rules() {
          return [
-            'username' => 'Username',
-            'password' => 'Password',
-            'email' => 'Email',
-            'subscriptions' => 'Subscriptions',
-            'photos' => 'Photos',
+            // the username, password, email, country, city, and phone attributes are
+            //required
+            [['username' ,'password', 'email', 'country', 'city', 'phone'], 'required'],
+            // the email attribute should be a valid email address
+            ['email', 'email'],
          ];
       }
    }

@@ -156,7 +156,7 @@ class SiteController extends Controller
     }
 
     public function actionRegistration() {
-        $mRegistration = new RegistrationForm();
-        return $this->render('registration', ['model' => $mRegistration]);
-     }
+        $model = new RegistrationForm();
+        return $this->render('registration', ['model' => $model]);
+    }
 }
