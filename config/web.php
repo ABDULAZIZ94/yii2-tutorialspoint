@@ -47,9 +47,8 @@ $config = [
         'urlManager' => [
             'showScriptName' => false,
             'enablePrettyUrl' => true,
-            'rules' => [
-               'about' => 'site/about',
-            ]
+            'enableStrictParsing' => true,
+            'suffix' => '.html',
          ],
         /*
         'urlManager' => [
