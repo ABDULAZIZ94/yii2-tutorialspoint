@@ -140,5 +140,9 @@ class SiteController extends Controller
 
     public function actionTestWidget() { 
         return $this->render('testwidget'); 
+    }
+    
+    public function actionTestResponse() {
+        return \Yii::$app->response->sendFile('favicon.ico');
      }
 }

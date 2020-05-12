@@ -53,6 +53,10 @@ $config = [
         */
     ],
     'params' => $params,
+    'urlManager' => [ 
+        'showScriptName' => false, 
+        'enablePrettyUrl' => true 
+     ]
 ];
 
 if (YII_ENV_DEV) {
