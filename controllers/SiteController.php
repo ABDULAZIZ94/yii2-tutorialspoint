@@ -143,13 +143,6 @@ class SiteController extends Controller
     }
     
     public function actionTestResponse() {
-        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-        return [
-           'id' => '1',
-           'name' => 'Ivan',
-           'age' => 24,
-           'country' => 'Poland',
-           'city' => 'Warsaw'
-        ];
+        return $this->redirect('http://www.tutorialspoint.com/');
      }
 }
