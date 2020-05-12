@@ -8,9 +8,12 @@ use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use yii\base\DynamicModel;
+use yii\web\UploadedFile;
+use yii\widgets\ActiveForm;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\RegistrationForm;
+use app\models\UploadImageForm;
 
 class SiteController extends Controller
 {
@@ -258,5 +261,18 @@ class SiteController extends Controller
            'name' => 'country', 
            'value' => 'USA', 
         ])); 
-    } 
+    }
+    
+    public function actionUploadImage() {
+        $model = new UploadImageForm();
+        if (Yii::$app->request->isPost) {
+           $model->image = UploadedFile::getInstance($model, 'image');
+           if ($model->upload()) {
+              // file is uploaded successfully
+              echo "File successfully uploaded";
+              return;
+           }
+        }
+        return $this->render('upload', ['model' => $model]);
+    }
 }
