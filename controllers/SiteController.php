@@ -10,10 +10,12 @@ use yii\filters\VerbFilter;
 use yii\base\DynamicModel;
 use yii\web\UploadedFile;
 use yii\widgets\ActiveForm;
+use yii\data\Pagination;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\RegistrationForm;
 use app\models\UploadImageForm;
+use app\models\MyUser;
 
 class SiteController extends Controller
 {
@@ -278,5 +280,22 @@ class SiteController extends Controller
 
     public function actionFormatter(){
         return $this->render('formatter');
+    }
+
+    public function actionPagination() {
+        //preparing the query
+        $query = MyUser::find();
+        // get the total number of users
+        $count = $query->count();
+        //creating the pagination object
+        $pagination = new Pagination(['totalCount' => $count, 'defaultPageSize' => 10]);
+        //limit the query using the pagination and retrieve the users
+        $models = $query->offset($pagination->offset)
+           ->limit($pagination->limit)
+           ->all();
+        return $this->render('pagination', [
+           'models' => $models,
+           'pagination' => $pagination,
+        ]);
     }
 }
