@@ -9,3 +9,7 @@
 # reset current branch to xxxxxx commit
 
     git reset xxxxxxxxxx
+
+# database migration
+
+    ./yii migrate/create test_table
