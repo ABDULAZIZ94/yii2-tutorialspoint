@@ -143,6 +143,6 @@ class SiteController extends Controller
     }
     
     public function actionTestResponse() {
-        return $this->redirect('http://www.tutorialspoint.com/');
+        return \Yii::$app->response->sendFile('favicon.ico');
      }
 }
