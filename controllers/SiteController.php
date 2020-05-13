@@ -378,29 +378,12 @@ class SiteController extends Controller
         }
     }
 
-    public function actionTestDb(){
-        // INSERT (table name, column values)
-        Yii::$app->db->createCommand()->insert('user', [
-           'name' => 'My New User',
-           'email' => 'mynewuser@gmail.com',
-        ])->execute();
-        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
-           ->bindValue(':name', 'My New User')
-           ->queryOne();
+    public function actionTestDb() {
+        $user = (new \yii\db\Query())
+           ->select(['id', 'name', 'email'])
+           ->from('user')
+           ->where('name = :name', [':name' => 'User11'])
+           ->one();
         var_dump($user);
-        // UPDATE (table name, column values, condition)
-        Yii::$app->db->createCommand()->update('user', ['name' => 'My New User
-           Updated'], 'name = "My New User"')->execute();
-        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
-           ->bindValue(':name', 'My New User Updated')
-           ->queryOne();
-        var_dump($user);
-        // DELETE (table name, condition)
-        Yii::$app->db->createCommand()->delete('user', 'name = "My New User
-           Updated"')->execute();
-        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
-           ->bindValue(':name', 'My New User Updated')
-           ->queryOne();
-        var_dump($user);
-    }
+     }
 }
