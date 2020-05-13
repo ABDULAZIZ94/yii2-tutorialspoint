@@ -7,15 +7,15 @@
 # try query
 test param
 
-    http://35.240.171.129/index.php?r=example/test-params&first=hello&second=world
+    http://<server:port>/index.php?r=example/test-params&first=hello&second=world
 
 greeting
 
-    http://35.240.171.129/index.php?r=example/greeting
+    http://<server:port>/index.php?r=example/greeting
 
 hello wrold
 
-    http://35.240.171.129/index.php?r=example/hello-world
+    http://<server:port>/index.php?r=example/hello-world
 
 # show contact model
 
