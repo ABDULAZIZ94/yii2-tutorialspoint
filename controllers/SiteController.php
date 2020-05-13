@@ -11,7 +11,10 @@ use yii\base\DynamicModel;
 use yii\web\UploadedFile;
 use yii\widgets\ActiveForm;
 use yii\data\Pagination;
+use yii\data\ActiveDataProvider;
 use yii\data\Sort;
+use yii\db\ActiveQuery ;
+use yii\db\Query;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\RegistrationForm;
@@ -324,5 +327,18 @@ class SiteController extends Controller
         // equivalent to $object->setLabel('abc');
         $object->phone = '79005448877';
         var_dump($object);
+    }
+
+    public function actionDataProvider(){
+        $query = MyUser::find();
+        $provider = new ActiveDataProvider([
+           'query' => $query,
+           'pagination' => [
+              'pageSize' => 2,
+           ],
+        ]);
+        // returns an array of users objects
+        $users = $provider->getModels();
+        var_dump($users);
     }
 }
