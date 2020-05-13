@@ -382,8 +382,11 @@ class SiteController extends Controller
         $user = (new \yii\db\Query())
            ->select(['id', 'name', 'email'])
            ->from('user')
-           ->where('name = :name', [':name' => 'User11'])
+           ->where([
+              'name' => 'User5',
+              'email' => 'user5@gmail.com'
+           ])
            ->one();
         var_dump($user);
-     }
+    }
 }
