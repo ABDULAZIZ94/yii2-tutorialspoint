@@ -11,6 +11,7 @@ use yii\base\DynamicModel;
 use yii\web\UploadedFile;
 use yii\widgets\ActiveForm;
 use yii\data\Pagination;
+use yii\data\Sort;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\RegistrationForm;
@@ -298,4 +299,19 @@ class SiteController extends Controller
            'pagination' => $pagination,
         ]);
     }
+
+    public function actionSorting() {
+        //declaring the sort object
+        $sort = new Sort([
+           'attributes' => ['id', 'name', 'email'], 
+        ]);
+        //retrieving all users
+        $models = MyUser::find()
+           ->orderBy($sort->orders)
+           ->all();
+        return $this->render('sorting', [
+           'models' => $models,
+           'sort' => $sort,
+        ]);
+     }
 }
