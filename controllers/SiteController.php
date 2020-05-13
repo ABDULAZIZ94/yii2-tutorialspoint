@@ -379,25 +379,28 @@ class SiteController extends Controller
     }
 
     public function actionTestDb(){
-        // return a set of rows. each row is an associative array of column names and values.
-        // an empty array is returned if the query returned no results
-        $users = Yii::$app->db->createCommand('SELECT * FROM user LIMIT 5')
-           ->queryAll();
-        var_dump($users);
-        // return a single row (the first row)
-        // false is returned if the query has no result
-        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE id=1')
+        // INSERT (table name, column values)
+        Yii::$app->db->createCommand()->insert('user', [
+           'name' => 'My New User',
+           'email' => 'mynewuser@gmail.com',
+        ])->execute();
+        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
+           ->bindValue(':name', 'My New User')
            ->queryOne();
         var_dump($user);
-        // return a single column (the first column)
-        // an empty array is returned if the query returned no results
-        $userName = Yii::$app->db->createCommand('SELECT name FROM user')
-           ->queryColumn();
-        var_dump($userName);
-        // return a scalar value
-        // false is returned if the query has no result
-        $count = Yii::$app->db->createCommand('SELECT COUNT(*) FROM user')
-           ->queryScalar();
-        var_dump($count);
-     }
+        // UPDATE (table name, column values, condition)
+        Yii::$app->db->createCommand()->update('user', ['name' => 'My New User
+           Updated'], 'name = "My New User"')->execute();
+        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
+           ->bindValue(':name', 'My New User Updated')
+           ->queryOne();
+        var_dump($user);
+        // DELETE (table name, condition)
+        Yii::$app->db->createCommand()->delete('user', 'name = "My New User
+           Updated"')->execute();
+        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE name = :name')
+           ->bindValue(':name', 'My New User Updated')
+           ->queryOne();
+        var_dump($user);
+    }
 }
