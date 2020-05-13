@@ -379,14 +379,11 @@ class SiteController extends Controller
     }
 
     public function actionTestDb() {
-        $user = (new \yii\db\Query())
+        $users = (new \yii\db\Query())
            ->select(['id', 'name', 'email'])
            ->from('user')
-           ->where([
-              'name' => 'User5',
-              'email' => 'user5@gmail.com'
-           ])
-           ->one();
-        var_dump($user);
+           ->where(['between', 'id', 5, 7])
+           ->all();
+        var_dump($users);
     }
 }
