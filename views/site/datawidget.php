@@ -1,7 +1,6 @@
 <?php
-   use yii\widgets\ListView;
-   echo ListView::widget([
+   use yii\grid\GridView;
+   echo GridView::widget([
       'dataProvider' => $dataProvider,
-      'itemView' => '_user',
    ]);
 ?>
