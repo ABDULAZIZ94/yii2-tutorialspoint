@@ -382,8 +382,8 @@ class SiteController extends Controller
         $users = (new \yii\db\Query())
            ->select(['id', 'name', 'email'])
            ->from('user')
-           ->groupBy('name')
-           ->having('id < 5')
+           ->limit(5)
+           ->offset(5)
            ->all();
         var_dump($users);
      }
