@@ -13,6 +13,7 @@ use yii\widgets\ActiveForm;
 use yii\data\Pagination;
 use yii\data\ActiveDataProvider;
 use yii\data\SqlDataProvider;
+use yii\data\ArrayDataProvider;
 use yii\data\Sort;
 use yii\db\ActiveQuery ;
 use yii\db\Query;
@@ -331,22 +332,17 @@ class SiteController extends Controller
     }
 
     public function actionDataProvider() {
-        $count = Yii::$app->db->createCommand('SELECT COUNT(*) FROM user')->queryScalar();
-        $provider = new SqlDataProvider([
-           'sql' => 'SELECT * FROM user',
-           'totalCount' => $count,
+        $data = MyUser::find()->asArray()->all();
+        $provider = new ArrayDataProvider([
+           'allModels' => $data,
            'pagination' => [
-              'pageSize' => 5,
+              'pageSize' => 3,
            ],
            'sort' => [
-              'attributes' => [
-                 'id',
-                 'name',
-                 'email',
-              ],
+              'attributes' => ['id', 'name'],
            ],
         ]);
-        // returns an array of data rows
+        // get the rows in the currently requested page
         $users = $provider->getModels();
         var_dump($users);
     }
