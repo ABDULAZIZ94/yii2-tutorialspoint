@@ -376,5 +376,17 @@ class SiteController extends Controller
         if($model->save()){
            var_dump(MyUser::find()->asArray()->all());
         }
-     }
+    }
+
+    public function actionTestInterface() {
+        $container = new \yii\di\Container();
+        $container->set
+           ("\app\components\MyInterface","\app\components\First");
+        $obj = $container->get("\app\components\MyInterface");
+        $obj->test(); // print "First class"
+        $container->set
+           ("\app\components\MyInterface","\app\components\Second");
+        $obj = $container->get("\app\components\MyInterface");
+        $obj->test(); // print "Second class"
+    }
 }
