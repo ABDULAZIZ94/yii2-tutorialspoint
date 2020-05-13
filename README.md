@@ -18,3 +18,7 @@ create migration
 run migration
 
     ./yii migrate
+
+# Data access object test
+    
+    <server:port>/site/test-db
