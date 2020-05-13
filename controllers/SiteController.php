@@ -367,4 +367,14 @@ class SiteController extends Controller
            $model->trigger(MyUser::EVENT_NEW_USER);
         }
     }
+
+    public function actionTestBehavior() {
+        //creating a new user
+        $model = new MyUser();
+        $model->name = "John";
+        $model->email = "john@gmail.com";
+        if($model->save()){
+           var_dump(MyUser::find()->asArray()->all());
+        }
+     }
 }
