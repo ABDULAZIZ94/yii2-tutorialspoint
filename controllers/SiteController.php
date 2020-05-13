@@ -357,5 +357,14 @@ class SiteController extends Controller
         return $this->render('datawidget', [
            'dataProvider' => $dataProvider
         ]);
-     }
+    }
+
+    public function actionTestEvent() {
+        $model = new MyUser();
+        $model->name = "John";
+        $model->email = "john@gmail.com";
+        if($model->save()) {
+           $model->trigger(MyUser::EVENT_NEW_USER);
+        }
+    }
 }
