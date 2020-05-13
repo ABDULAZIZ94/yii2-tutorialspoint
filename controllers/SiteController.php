@@ -17,6 +17,7 @@ use app\models\ContactForm;
 use app\models\RegistrationForm;
 use app\models\UploadImageForm;
 use app\models\MyUser;
+use app\components\Taxi;
 
 class SiteController extends Controller
 {
@@ -313,5 +314,15 @@ class SiteController extends Controller
            'models' => $models,
            'sort' => $sort,
         ]);
-     }
+    }
+
+    public function actionProperties() {
+        $object = new Taxi();
+        // equivalent to $phone = $object->getPhone();
+        $phone = $object->phone;
+        var_dump($phone);
+        // equivalent to $object->setLabel('abc');
+        $object->phone = '79005448877';
+        var_dump($object);
+    }
 }
