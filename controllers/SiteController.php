@@ -382,7 +382,7 @@ class SiteController extends Controller
         $users = (new \yii\db\Query())
            ->select(['id', 'name', 'email'])
            ->from('user')
-           ->where(['between', 'id', 5, 7])
+           ->orderBy('name DESC')
            ->all();
         var_dump($users);
     }
