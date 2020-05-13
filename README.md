@@ -14,5 +14,3 @@ hello wrold
 
     http://<server:port>/index.php?r=example/hello-world
 
-
-
