@@ -378,15 +378,26 @@ class SiteController extends Controller
         }
     }
 
-    public function actionTestInterface() {
-        $container = new \yii\di\Container();
-        $container->set
-           ("\app\components\MyInterface","\app\components\First");
-        $obj = $container->get("\app\components\MyInterface");
-        $obj->test(); // print "First class"
-        $container->set
-           ("\app\components\MyInterface","\app\components\Second");
-        $obj = $container->get("\app\components\MyInterface");
-        $obj->test(); // print "Second class"
-    }
+    public function actionTestDb(){
+        // return a set of rows. each row is an associative array of column names and values.
+        // an empty array is returned if the query returned no results
+        $users = Yii::$app->db->createCommand('SELECT * FROM user LIMIT 5')
+           ->queryAll();
+        var_dump($users);
+        // return a single row (the first row)
+        // false is returned if the query has no result
+        $user = Yii::$app->db->createCommand('SELECT * FROM user WHERE id=1')
+           ->queryOne();
+        var_dump($user);
+        // return a single column (the first column)
+        // an empty array is returned if the query returned no results
+        $userName = Yii::$app->db->createCommand('SELECT name FROM user')
+           ->queryColumn();
+        var_dump($userName);
+        // return a scalar value
+        // false is returned if the query has no result
+        $count = Yii::$app->db->createCommand('SELECT COUNT(*) FROM user')
+           ->queryScalar();
+        var_dump($count);
+     }
 }
